@@ -1,0 +1,87 @@
+{
+    "1" : {
+        "name": "pet-store-banner.png",
+        "path": "assets/images/app/",
+        "url": "https://www.123rf.com/photo_28042633_pet-store-banner.html"
+    },
+    "2": {
+        "name": "pet-shop-fish-catagories.jpg",
+        "path": "assets/images/pet-shop-animal-catagories/",
+        "url": "https://www.sciencefocus.com/nature/why-do-fish-feel-slimy-and-lose-scales-when-you-touch-them/"
+    },
+    "3": {
+        "name": "pet-shop-mammal-catagory.jpg",
+        "path": "assets/images/pet-shop-animal-catagories/",
+        "url": "https://en.wiktionary.org/wiki/hamster"
+    },
+    "4": {
+        "name": "pet-shop-reptile-catagory.jpg",
+        "path": "assets/images/pet-shop-animal-catagories/",
+        "url": "https://www.cdc.gov/healthypets/pets/reptiles.html"
+    },
+    "5": {
+        "name": "pet-shop-bird-catagories.jpg",
+        "path": "assets/images/pet-shop-animal-catagories/",
+        "url": "https://www.medicalnewstoday.com/articles/327269"
+    },
+    "6": {
+        "name": "pet-shop-bird-supplies.jpg",
+        "path": "assets/images/pet-shop-animal-supply-catagories/",
+        "url": "https://www.amazon.com/YML-A1594-Spacing-Round-Black/dp/B00XYYGKZI"
+    },
+    "7": {
+        "name": "pet-shop-fish-supplies.jpg",
+        "path": "assets/images/pet-shop-animal-supply-catagories/",
+        "url": "http://www.acrylic-displaystands.com/sale-11439841-rectangular-large-acrylic-fish-tank-clear-acrylic-fish-tank-for-aquarium.html"
+    },
+    "8": {
+        "name": "pet-shop-mammal-supplies.jpg",
+        "path": "assets/images/pet-shop-animal-supply-catagories/",
+        "url": "https://www.alibaba.com/product-detail/best-hamster-cage-for-syrian-hamster_986047188.html"
+    },
+    "9": {
+        "name": "pet-shop-reptile-supplies.jpg",
+        "path": "assets/images/pet-shop-animal-supply-catagories/",
+        "url": "https://www.google.com/search?q=reptile+supplies&tbm=isch&ved=2ahUKEwjL1OrFybDtAhXXOM0KHVcvBrQQ2-cCegQIABAA&oq=reptile+su&gs_lcp=CgNpbWcQARgAMgQIABBDMgIIADICCAAyAggAMgIIADICCAAyAggAMgIIADICCAAyAggAOgQIIxAnOgUIABCxAzoICAAQsQMQgwFQ69AHWKjdB2CZ5AdoAHAAeACAAUmIAZQFkgECMTCYAQCgAQGqAQtnd3Mtd2l6LWltZ8ABAQ&sclient=img&ei=0jPIX8ujDtfxtAbX3pigCw&bih=722&biw=1536&hl=EN#imgrc=-8P2UDgkMnAGxM"
+    },
+    "10": {
+        "name": "pet-shop-aquatic-plants.jpg",
+        "path": "assets/images/pet-shop-plant-catagories/",
+        "url": "https://www.aiche.org/chenected/2019/09/aquatic-plant-offers-solutions-water-treatment-and-more"
+    },
+    "11": {
+        "name": "pet-shop-terrestrial-plants.jpg",
+        "path": "assets/images/pet-shop-plant-catagories/",
+        "url": "https://www.saltmarshguide.org/guide/identification-guide/terrestrial-plants/"
+    },
+    "12": {
+        "name": "pet-shop-low-light-plants.jpg",
+        "path": "assets/images/pet-shop-plant-catagories/",
+        "url": "https://www.backyardboss.net/best-indoor-plants-low-light/"
+    },
+    "13": {
+        "name": "pet-shop-high-light-plants.jpg",
+        "path": "assets/images/pet-shop-plant-catagories/",
+        "url": "https://plantimex.co.za/news/indoor-plants-high-light-conditions-plants-covered-patios"
+    },
+    "14": {
+        "name": "pet-shop-plant-soil.jpg",
+        "path": "assets/images/pet-shop-plant-supply-catagories/",
+        "url": "https://www.trees.com/gardening-and-landscaping/best-potting-soil"
+    },
+    "15": {
+        "name": "pet-shop-plant-fert.jpg",
+        "path": "assets/images/pet-shop-plant-supply-catagories/",
+        "url": "https://www.homedepot.com/p/Miracle-Gro-Water-Soluble-1-5-lb-All-Purpose-Plant-Food-2001123/100081891?bvrrp=1999/questions/product/2/100081891.htm"
+    },
+    "16": {
+        "name": "pet-shop-plant-light.jpeg",
+        "path": "assets/images/pet-shop-plant-supply-catagories/",
+        "url": "https://www.hgtv.com/outdoors/flowers-and-plants/houseplants/how-to-choose-the-best-indoor-lighting-for-plants"
+    },
+    "17": {
+        "name": "pet-shop-plant-tools.jpg",
+        "path": "assets/images/pet-shop-plant-supply-catagories/",
+        "url": "https://www.amazon.com/VILIVIT-Gel-Grip-Garden-Tools/dp/B07SHRXZFV"
+    }
+}

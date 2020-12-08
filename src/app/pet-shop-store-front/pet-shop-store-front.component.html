@@ -1,0 +1,64 @@
+<h1 class="col-12-span"></h1>
+<div class="col-blank"></div>
+<div class="col-blank"></div>
+<div class="col-blank"></div>
+
+<div class="col-12-span">
+    <h1>Welcome Back to the Pet Shop!</h1>
+</div>
+
+<div class="col-12-span row" id="promo-item">
+    <button class="col-1-span" (click)="prev()">Prev</button>
+    <img 
+        src="{{promoUrl.imgUrl}}" 
+        class="col-10-span" alt="pet-shop-promo" 
+        style="width: 100%; height: 500px; background-color: green;"
+        (click)="redirect(promoUrl.key!!, promoUrl.index, promoUrl.link)"
+    >
+    <button class="col-1-span" (click)="next()">Next</button>
+</div>
+
+<div class="col-12-span" style="text-align: center;">
+    <h2>Deals just for You</h2>
+</div>
+
+<div class="col-12-span row deals-of-the-day" id="">
+    <img 
+        *ngFor="let product of deals"
+        (click)="redirect(product.key!!, product.index, product.link)"
+        class="col-4-span" 
+        src="{{product.imgUrl}}" 
+        alt="pet-shop-deal" 
+        style="background-color: blue;"
+    >
+</div>
+
+<div class="col-12-span" style="text-align: center;">
+    <h2>Supplies</h2>
+</div>
+
+<div class="col-12-span row deals-of-the-day" id="">
+    <img 
+        *ngFor="let product of supplies"
+        (click)="redirect(product.key!!, product.index, product.link)"
+        class="col-4-span" 
+        src="{{product.imgUrl}}" 
+        alt="pet-shop-deal" 
+        style="background-color: blue;"
+    >
+</div>
+
+<div class="col-12-span" style="text-align: center;">
+    <h2>Care packages</h2>
+</div>
+
+<div class="col-12-span row deals-of-the-day" id="">
+    <img 
+        *ngFor="let product of care_pack"
+        (click)="redirect(product.key!!, product.index, product.link)"
+        class="col-4-span" 
+        src="{{product.imgUrl}}" 
+        alt="pet-shop-deal" 
+        style="background-color: blue;"
+    >
+</div>

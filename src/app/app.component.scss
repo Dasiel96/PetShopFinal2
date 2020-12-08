@@ -1,0 +1,22 @@
+
+#banner {
+    img {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+#nav-bar {
+    a {
+        font-size: 1.2em;
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+    }
+
+    a:hover {
+        background-color: grey;
+        color: blue;
+    }
+}

@@ -76,7 +76,7 @@ import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@a
   providers: [
     PetShopProductsDetailService,
     PetShopProductCatagoryServiceService,
-    {provide: LocationStrategy, useClass: PathLocationStrategy}
+    {provide: LocationStrategy, useClass: HashLocationStrategy}
   ],
   bootstrap: [
     AppComponent

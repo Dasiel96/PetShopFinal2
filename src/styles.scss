@@ -124,4 +124,8 @@ div {
     .col-1-span {
         grid-column: span $col-nums;
     }
+
+    .website-grid, .row {
+        row-gap: 10px;
+    }
 }

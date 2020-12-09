@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "Run": "./create-folder.bat"
+    "deploy": "ng build --prod --output-path docs --base-href /PetShopFinal/ && cd ./docs && ren index.html 404.html && cd ../ && git add . && git commit && git push"
   },
   "private": true,
   "dependencies": {

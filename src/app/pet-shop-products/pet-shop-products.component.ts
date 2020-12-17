@@ -18,7 +18,7 @@ export class PetShopProductsComponent implements OnInit {
   @Input() product_type = ""
   @Input() product_catagory: string[] = []
 
-  private links = new Map<string, string>()
+  links = new Map<string, string>()
 
   constructor(private router: Router, private service: PetShopProductsDetailService) { 
     this.links.set("birds", site_links.birds)

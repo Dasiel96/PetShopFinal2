@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../app.component';
-import { JsonObj, PetShopProductsDetailService } from '../pet-shop-products-detail.service';
+import { JsonObj, PetShopProductsDetailService, productNavObj } from '../pet-shop-products-detail.service';
 
 @Component({
   selector: 'app-pet-shop-animals-birds',
@@ -13,7 +13,7 @@ import { JsonObj, PetShopProductsDetailService } from '../pet-shop-products-deta
 export class PetShopAnimalsBirdsComponent implements OnInit {
 
   product_objs_list: Product[] = []
-  product_catagory: string[] = []
+  product_catagory: productNavObj[] = []
   product_type = "birds"
   constructor() { 
  

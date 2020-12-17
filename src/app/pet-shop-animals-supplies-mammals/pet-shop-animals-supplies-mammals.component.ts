@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Product } from '../app.component';
+import { productNavObj } from '../pet-shop-products-detail.service';
 
 @Component({
   selector: 'app-pet-shop-animals-supplies-mammals',
@@ -12,7 +13,7 @@ import { Product } from '../app.component';
 export class PetShopAnimalsSuppliesMammalsComponent implements OnInit {
 
   product_objs_list:Product[] = []
-  product_catagory: string[] = []
+  product_catagory: productNavObj[] = []
   product_type ="mammal-supplies"
   constructor() { }
 

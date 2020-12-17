@@ -5,13 +5,15 @@
 >
 <div class="col-blank"></div>
 <div class="col-12-span row row-col-gap nav-bar">
-    <a
-        *ngFor="let c of product_catagory"
-        class="col-3-span"
-        href="#{{links.get(c)}}"
-    >
-        {{c}}
-    </a>
+    <div class="col-3-span" *ngFor="let l of product_catagory">
+        <div *ngIf="isCurrentPage(l.link_name); then Then else Else"></div>
+        <ng-template #Then>
+            <a class="highlight" href="#{{l.href}}">{{displayName(l.link_name)}}</a>
+        </ng-template>
+        <ng-template #Else>
+            <a href="#{{l.href}}">{{displayName(l.link_name)}}</a>
+        </ng-template>
+    </div>
 </div>
 
 <div class="col-blank"></div>

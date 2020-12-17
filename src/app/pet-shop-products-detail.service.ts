@@ -1,7 +1,8 @@
 import { Injectable, OnInit } from '@angular/core';
 import data from "../assets/json/content.json"
+import * as site_links from "../assets/json/site-links.json"
 
-export interface JsonObj{
+export interface JsonObj {
   name: string,
   price: string,
   des: string,
@@ -13,20 +14,27 @@ export interface JsonObj{
   item_index: number
 }
 
+export interface productNavObj {
+  link_name: string,
+  href: string
+}
+
 @Injectable({
   providedIn: 'root'
 })
-export class PetShopProductsDetailService implements OnInit{
+export class PetShopProductsDetailService {
   private product_details = new Map<string, Array<JsonObj>>()
-  private product_animals = new Array<string>()
-  private product_supplies = new Array<string>()
+  private product_animals = new Array<productNavObj>()
+  private product_supplies = new Array<productNavObj>()
+  private links = new Map<string, string>()
   private readonly product_check = "supplies"
   private key = ""
   private index = 0
 
   constructor() {
+    this.initMap()
     for (let key in data) {
-      for (let val in data[key]){
+      for (let val in data[key]) {
         const json_data = data[key][val]
         const obj: JsonObj = {
           name: json_data["name"],
@@ -47,13 +55,33 @@ export class PetShopProductsDetailService implements OnInit{
           this.product_details.get(key)!.push(obj)
         }
       }
-      this.getCorrectList(key).push(key)
+
+      const link = this.links.get(key)
+
+      if (link) {
+        this.getCorrectList(key).push({
+          link_name: key,
+          href: link
+        })
+      }
+
     }
   }
 
+  private initMap() {
+    this.links.set("birds", site_links.birds)
+    this.links.set("reptiles", site_links.reptiles)
+    this.links.set("mammals", site_links.mammals)
+    this.links.set("fish", site_links.fish)
+    this.links.set("bird-supplies", site_links['bird-supplies'])
+    this.links.set("reptile-supplies", site_links['reptile-supplies'])
+    this.links.set("mammal-supplies", site_links['mammal-supplies'])
+    this.links.set("fish-supplies", site_links['fish-supplies'])
+  }
+
   getCorrectList(key: string) {
-    let cor_list = new Array<string>()
-    if (key.includes(this.product_check)){
+    let cor_list = new Array<productNavObj>()
+    if (key.includes(this.product_check)) {
       cor_list = this.product_supplies
     }
     else {
@@ -63,7 +91,7 @@ export class PetShopProductsDetailService implements OnInit{
   }
 
   ngOnInit(): void {
-    
+
   }
 
   getSpecies(key: string) {

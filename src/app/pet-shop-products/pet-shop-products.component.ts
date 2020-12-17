@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from '../app.component';
-import { JsonObj, PetShopProductsDetailService } from '../pet-shop-products-detail.service';
+import { JsonObj, PetShopProductsDetailService, productNavObj } from '../pet-shop-products-detail.service';
 import * as site_links from "../../assets/json/site-links.json"
 
 @Component({
@@ -16,7 +16,7 @@ export class PetShopProductsComponent implements OnInit {
 
   @Input() product_objs_list: Product[] = []
   @Input() product_type = ""
-  @Input() product_catagory: string[] = []
+  @Input() product_catagory: productNavObj[] = []
 
   links = new Map<string, string>()
 
@@ -37,6 +37,15 @@ export class PetShopProductsComponent implements OnInit {
   saveKeyAndIndex(key: string, link: string, index: number) {
     this.service.setDataRetrieveData(key, index)
     this.router.navigate([link])
+  }
+
+  displayName(link_name: string){
+    let name = link_name.replace("-", " ")
+    return name
+  }
+
+  isCurrentPage(key: string) {
+    return key === this.product_type
   }
 
 }

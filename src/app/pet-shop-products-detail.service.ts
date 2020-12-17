@@ -18,6 +18,9 @@ export interface JsonObj{
 })
 export class PetShopProductsDetailService implements OnInit{
   private product_details = new Map<string, Array<JsonObj>>()
+  private product_animals = new Array<string>()
+  private product_supplies = new Array<string>()
+  private readonly product_check = "supplies"
   private key = ""
   private index = 0
 
@@ -44,7 +47,19 @@ export class PetShopProductsDetailService implements OnInit{
           this.product_details.get(key)!.push(obj)
         }
       }
+      this.getCorrectList(key).push(key)
     }
+  }
+
+  getCorrectList(key: string) {
+    let cor_list = new Array<string>()
+    if (key.includes(this.product_check)){
+      cor_list = this.product_supplies
+    }
+    else {
+      cor_list = this.product_animals
+    }
+    return cor_list
   }
 
   ngOnInit(): void {

@@ -1,12 +1,23 @@
 <ng-template 
     [product_objs_list]="product_objs_list"
+    [product_catagory]="product_catagory"
     [appPetShopProductDynamic]="product_type"
-    class="col-12-span row"
 >
 <div class="col-blank"></div>
+<div class="col-12-span row row-col-gap nav-bar">
+    <a
+        *ngFor="let c of product_catagory"
+        class="col-3-span"
+        href="#{{links.get(c)}}"
+    >
+        {{c}}
+    </a>
+</div>
+
 <div class="col-blank"></div>
 <div class="col-blank"></div>
-<div class="shop-catagory-grid">
+<div class="col-blank"></div>
+<div class="col-12-span shop-catagory-grid">
     <div 
         class="col-3-span" 
         *ngFor="let product of product_objs_list"

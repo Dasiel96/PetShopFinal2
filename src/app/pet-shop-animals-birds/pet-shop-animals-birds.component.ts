@@ -13,6 +13,7 @@ import { JsonObj, PetShopProductsDetailService } from '../pet-shop-products-deta
 export class PetShopAnimalsBirdsComponent implements OnInit {
 
   product_objs_list: Product[] = []
+  product_catagory: string[] = []
   product_type = "birds"
   constructor() { 
  

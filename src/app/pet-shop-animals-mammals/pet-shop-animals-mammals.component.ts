@@ -12,6 +12,7 @@ import { Product } from '../app.component';
 export class PetShopAnimalsMammalsComponent implements OnInit {
 
   product_objs_list: Product[] = []
+  product_catagory: string[] = []
   product_type = "mammals"
   constructor() { }
 

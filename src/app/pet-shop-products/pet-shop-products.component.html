@@ -3,18 +3,12 @@
     [product_catagory]="product_catagory"
     [appPetShopProductDynamic]="product_type"
 >
-<div class="col-blank"></div>
-<div class="col-12-span row row-col-gap nav-bar">
-    <div class="col-3-span" *ngFor="let l of product_catagory">
-        <div *ngIf="isCurrentPage(l.link_name); then Then else Else"></div>
-        <ng-template #Then>
-            <a class="highlight" href="#{{l.href}}">{{displayName(l.link_name)}}</a>
-        </ng-template>
-        <ng-template #Else>
-            <a href="#{{l.href}}">{{displayName(l.link_name)}}</a>
-        </ng-template>
-    </div>
-</div>
+
+<app-product-nav-bar
+    [nav_list]="product_catagory"
+    [product_key]="product_type"
+>
+</app-product-nav-bar>
 
 <div class="col-blank"></div>
 <div class="col-blank"></div>

@@ -1,6 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-$col-nums: 12;
-$col-templates: repeat(#{$col-nums}, 1fr);
+@import "./assets/scss/variables.scss";
+
+
 
 body {
     margin: 0px;
@@ -114,8 +114,8 @@ div {
         display: block;
         font-size: 1.2em;
         text-decoration: none;
-        background-color: black;
-        color: white;
+        background-color: $light-brown;
+        color: $dark-green;
         border-radius: 20px;
     }
 

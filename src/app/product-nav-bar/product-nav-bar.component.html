@@ -1,0 +1,12 @@
+<div class="col-blank"></div>
+<div class="col-12-span row row-col-gap nav-bar">
+    <div class="col-3-span" *ngFor="let l of nav_list">
+        <div *ngIf="isCurrentPage(l.link_name); then Then else Else"></div>
+        <ng-template #Then>
+            <a class="highlight" href="#{{l.href}}">{{displayName(l.link_name)}}</a>
+        </ng-template>
+        <ng-template #Else>
+            <a href="#{{l.href}}">{{displayName(l.link_name)}}</a>
+        </ng-template>
+    </div>
+</div>

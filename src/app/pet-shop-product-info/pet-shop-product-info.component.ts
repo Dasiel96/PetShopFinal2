@@ -17,7 +17,7 @@ export class PetShopProductInfoComponent implements OnInit {
   desSource = ""
   price = ""
   name = ""
-  nav_list = new Array<productNavObj>()
+  product_catagory = new Array<productNavObj>()
   product_type: string
 
   constructor(service: PetShopProductsDetailService) { 
@@ -38,7 +38,7 @@ export class PetShopProductInfoComponent implements OnInit {
     }
 
     for (let product of service.getCorrectList(key)){
-      this.nav_list.push(product)
+      this.product_catagory.push(product)
     }
   }
 

@@ -9,7 +9,8 @@ export interface Product {
   link: string,
   index: number,
   des?: string,
-  key?: string
+  key?: string,
+  sourceUrl?: string
 }
 
 @Component({

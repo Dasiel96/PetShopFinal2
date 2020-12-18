@@ -29,28 +29,32 @@ export class PetShopProductCatagoryServiceService {
           imgUrl: "assets/images/pet-shop-animal-catagories/pet-shop-mammal-catagory.jpg",
           price: "",
           link: `#${site_links.mammals}`,
-          index: 0
+          index: 0,
+          sourceUrl: "https://petkingdom.org/small-animals/"
         },
         {
           name: "fish",
           imgUrl: "assets/images/pet-shop-animal-catagories/pet-shop-fish-catagories.jpg",
           price: "",
           link: `#${site_links.fish}`,
-          index: 0
+          index: 0,
+          sourceUrl: 'https://listontap.com/top-10-cutest-fish-breeds-list/'
         },
         {
           name: "reptiles",
           imgUrl: "assets/images/pet-shop-animal-catagories/pet-shop-reptile-catagories.jpg",
           price: "",
           link: `#${site_links.reptiles}`,
-          index: 0
+          index: 0,
+          sourceUrl: 'https://www.petlanddunwoody.com/reptiles/'
         },
         {
           name: "birds",
           imgUrl: "assets/images/pet-shop-animal-catagories/pet-shop-bird-catagories.jpg",
           price: "",
           link: `#${site_links.birds}`,
-          index: 0
+          index: 0,
+          sourceUrl: 'https://lafeber.com/pet-birds/species/zebra-finch/'
         },
       ])
   }
@@ -62,28 +66,32 @@ export class PetShopProductCatagoryServiceService {
         imgUrl: "assets/images/pet-shop-animal-supply-catagories/pet-shop-mammal-supplies.jpg", 
         price: "",
         link: `#${site_links["mammal-supplies"]}`,
-        index: 0
+        index: 0,
+        sourceUrl: 'https://co.pinterest.com/pin/148196643970422260/'
       },
       {
         name: "fish supplies", 
         imgUrl: "assets/images/pet-shop-animal-supply-catagories/pet-shop-fish-supplies.jpg", 
         price: "",
         link: `#${site_links["fish-supplies"]}`,
-        index: 0
+        index: 0,
+        sourceUrl: 'https://the9best.com/categories/pet-supplies/fish-and-aquatic-pets/' 
       },
       {
         name: "reptile supplies", 
         imgUrl: "assets/images/pet-shop-animal-supply-catagories/pet-shop-reptile-supplies.jpg", 
         price: "",
         link: `#${site_links["reptile-supplies"]}`,
-        index: 0
+        index: 0,
+        sourceUrl: 'https://www.pinterest.com/pin/511721576407166528/'
       },
       {
         name: "bird supplies", 
         imgUrl: "assets/images/pet-shop-animal-supply-catagories/pet-shop-bird-supplies.jpg", 
         price: "",
         link: `#${site_links["bird-supplies"]}`,
-        index: 0
+        index: 0,
+        sourceUrl: 'https://www.amazon.com/PETUOL-Parrots-Anchovies-Parakeets-Cockatiel/dp/B07QYRGYW6'
       },
     ])
   }

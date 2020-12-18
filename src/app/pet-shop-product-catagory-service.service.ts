@@ -93,6 +93,7 @@ export class PetShopProductCatagoryServiceService {
         index: 0,
         sourceUrl: 'https://www.amazon.com/PETUOL-Parrots-Anchovies-Parakeets-Cockatiel/dp/B07QYRGYW6'
       },
+      
     ])
   }
 

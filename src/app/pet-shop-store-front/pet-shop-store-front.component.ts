@@ -32,7 +32,7 @@ export class PetShopStoreFrontComponent implements OnInit {
 
     this.getPromoImg(rand_key)
     this.fillOffersList(this.deals)
-    this.fillOffersList(this.supplies)
+    this.fillSupplyOffersList(this.supplies)
     this.fillOffersList(this.care_pack)
     console.log(this.deals, this.supplies, this.care_pack)
   }
@@ -62,13 +62,27 @@ export class PetShopStoreFrontComponent implements OnInit {
 
   private fillOffersList(list: Product[]) {
     let rand_key = this.getRandomKey(this.service)
+    this.fillList(rand_key, list)
+  }
+
+  private fillSupplyOffersList(list: Product[]) {
+    let rand_key = this.getRandomSupplyKey(this.service)
+    this.fillList(rand_key, list, true)
+  }
+
+  private fillList(rand_key: string, list: Product[], supply:boolean=false) {
     let product_list = this.service.getSpecies(rand_key)
 
     if (product_list) {
       for (let i = 0; i < 3; i++) {
         let product = this.createProduct(this.getRandomItem(product_list!!), rand_key)
         while (this.checkUrlExistsInList(list, product.imgUrl)){
-          rand_key = this.getRandomKey(this.service)
+          if (supply){
+            rand_key = this.getRandomSupplyKey(this.service)
+          }
+          else {
+            rand_key = this.getRandomKey(this.service)
+          }
           product_list = this.service.getSpecies(rand_key)
           product = this.createProduct(this.getRandomItem(product_list!!), rand_key)
         }
@@ -80,6 +94,18 @@ export class PetShopStoreFrontComponent implements OnInit {
   private getRandomKey(service: PetShopProductsDetailService) {
     const len = this.getKeyListLen(service) - 1
     const rand_key = this.getKey(service, Math.round(Math.random() * len))
+    return rand_key
+  }
+
+  private getRandomSupplyKey(service: PetShopProductsDetailService) {
+    let rand_key = this.getRandomKey(this.service)
+    const check_is_supply = (key: string) => {
+      return key.includes("supplies")
+    }
+
+    while (!check_is_supply(rand_key)) {
+      rand_key = this.getRandomKey(this.service)
+    }
     return rand_key
   }
 

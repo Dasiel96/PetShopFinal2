@@ -1,0 +1,13 @@
+<div class="row offers-borders">
+    <div class="col-12-span">
+        <h2>{{offer_name}}</h2>
+    </div>
+    
+    <div class="col-12-span row row-col-gap" id="">
+        <app-pet-shop-product-listing *ngFor="let p of product_list" 
+        [product]="p" 
+        [key]="getKey(p)"
+        class="col-4-span">
+        </app-pet-shop-product-listing>
+    </div>
+</div>

@@ -13,21 +13,15 @@
 <div class="col-blank"></div>
 <div class="col-blank"></div>
 <div class="col-blank"></div>
+<div class="col-12-span"><h1>{{title}}</h1></div>
 <div class="col-12-span shop-catagory-grid">
-    <div 
+    <app-pet-shop-product-listing 
         class="col-3-span" 
         *ngFor="let product of product_objs_list"
+        [product]="product"
+        [key]="product_type"
+        [des]="product.des"
     >
-        <div (click)="saveKeyAndIndex(product_type, product.link, product.index)">
-            <img class="resize" src="{{product.imgUrl}}" alt="pet-shop-item-catagory" style="background-color: aqua;">
-        </div>
-        <div class="col-6-span" id="product-header">
-            <h4 class="col-2-span">{{product.name}}</h4>
-        </div>
-        <div class="shop-catagory-grid">
-            <p class="col-3-span">${{product.price}}</p>
-            <p class="col-3-span">{{product.des}}</p>
-        </div>
-    </div>
+    </app-pet-shop-product-listing>
 </div>
 </ng-template>

@@ -14,6 +14,7 @@ import { Product } from '../app.component';
 export class PetShopProductCatagoriesComponent implements OnInit {
 
   @Input() product_objs_list: Product[] = []
+  @Input() title = ""
   constructor(private router: Router) { }
 
   ngOnInit(): void {

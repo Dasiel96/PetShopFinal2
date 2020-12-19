@@ -36,6 +36,8 @@ import { PetShopContactComponent } from './pet-shop-contact/pet-shop-contact.com
 import { TestDirDirective } from './test-dir.directive';
 import { HashLocationStrategy, LocationStrategy, PathLocationStrategy } from '@angular/common';
 import { ProductNavBarComponent } from './product-nav-bar/product-nav-bar.component';
+import { PetShopProductListingComponent } from './pet-shop-product-listing/pet-shop-product-listing.component';
+import { PetShopOffersComponent } from './pet-shop-offers/pet-shop-offers.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +72,8 @@ import { ProductNavBarComponent } from './product-nav-bar/product-nav-bar.compon
     PetShopContactComponent,
     TestDirDirective,
     ProductNavBarComponent,
+    PetShopProductListingComponent,
+    PetShopOffersComponent,
   ],
   imports: [
     BrowserModule,

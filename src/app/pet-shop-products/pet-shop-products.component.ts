@@ -17,6 +17,7 @@ export class PetShopProductsComponent implements OnInit {
   @Input() product_objs_list: Product[] = []
   @Input() product_type = ""
   @Input() product_catagory: productNavObj[] = []
+  @Input() title = ""
 
   links = new Map<string, string>()
 

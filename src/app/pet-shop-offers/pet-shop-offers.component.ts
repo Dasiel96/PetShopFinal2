@@ -6,7 +6,7 @@ import { Product } from '../app.component';
   templateUrl: './pet-shop-offers.component.html',
   styleUrls: ['./pet-shop-offers.component.scss'],
   host: {
-    class: "col-12-span"
+    class: "col-12-span row"
   }
 })
 export class PetShopOffersComponent implements OnInit {

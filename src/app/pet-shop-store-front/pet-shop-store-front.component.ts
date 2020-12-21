@@ -20,6 +20,8 @@ export class PetShopStoreFrontComponent implements OnInit {
   deals = new Array<Product>()
   supplies = new Array<Product>()
   care_pack = new Array<Product>()
+  top_picks = new Array<Product>()
+  xmas_gifts = new Array<Product>()
 
   private promo_index = 0
   private promo_list = new Array<Product>()
@@ -34,6 +36,8 @@ export class PetShopStoreFrontComponent implements OnInit {
     this.fillOffersList(this.deals)
     this.fillSupplyOffersList(this.supplies)
     this.fillOffersList(this.care_pack)
+    this.fillOffersList(this.top_picks)
+    this.fillOffersList(this.xmas_gifts)
     console.log(this.deals, this.supplies, this.care_pack)
   }
 
